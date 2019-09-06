@@ -1,0 +1,17 @@
+input{
+    max-width: 40%;
+  }
+  button{
+    margin-left: 5px;
+  }
+  .form{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    height: 50%;
+    width: 50%;
+  }
+  
+  img{
+    max-width: 240px;
+    max-height: 240px;
+  }
