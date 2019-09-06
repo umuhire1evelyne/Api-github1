@@ -20,14 +20,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule} from '@angular/forms';
-
+import {AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { DevComponent } from './dev/dev.component';
 import { RepoComponent } from './repo/repo.component';
+import { DevRequestService } from './dev-request.service';
 
 @NgModule({
   declarations: [
@@ -39,9 +39,10 @@ import { RepoComponent } from './repo/repo.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [DevRequestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
