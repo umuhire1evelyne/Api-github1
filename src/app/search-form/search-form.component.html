@@ -1,0 +1,23 @@
+<!-- <p>search-form works!</p> -->
+
+
+<form>
+  <div class="form">
+    <input type="text" name="search" class="form-control" placeholder="search" #search>
+    <button class="btn btn-secondary btn-sm" (click)="searcher(search.value)">Search</button>
+  </div>
+  <div class="container row">
+    <div class="col-md-4">
+      <img src={{dev.image}}>
+      <h1>{{dev.name}}</h1>
+    </div>
+    <div class="col-md-8" *ngFor='let repo of dev.repo'>
+        <hr>
+        <h4>{{repo.name}}</h4>
+        <p>{{repo.description}}</p>
+
+    </div>
+
+  </div>
+
+</form>
